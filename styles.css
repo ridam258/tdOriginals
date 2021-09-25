@@ -85,6 +85,19 @@ dl dd {
 .serviceList::-webkit-scrollbar {
   width: 0px;
 }
+.collapsedContent {
+  display: none;
+}
+.upArrow {
+  display: none;
+}
+.showContent {
+  display: unset;
+}
+.hideContent {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .serviceDetailHead h1 {
     font-size: xx-large;
