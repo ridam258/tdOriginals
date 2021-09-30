@@ -1,3 +1,4 @@
+@import url("./css/font-awesome.min.css");
 .ptf-is--home-default .ptf-navbar,
 .ptf-is--home-default .ptf-navbar.ptf-navbar--solid {
   background-color: #000;
@@ -134,4 +135,110 @@ dl dd {
     width: 80%;
     margin: 2rem auto;
   }
+}
+.image-gallery {
+  position: relative;
+}
+.image-gallery .single-gallery {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  float: left;
+  box-sizing: border-box;
+}
+.image-gallery .single-gallery.mix {
+  /* display: none; */
+}
+.image-gallery .single-gallery.span-8 {
+  width: 66.66666667%;
+}
+.image-gallery .single-gallery.span-6 {
+  width: 50%;
+}
+.image-gallery .single-gallery.span-4 {
+  width: 33.33333333%;
+}
+.image-gallery .single-gallery.span-3 {
+  width: 25%;
+}
+.single-gallery:hover .img-holder img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.single-gallery:hover .img-holder .content .title-holder {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.single-gallery:hover .img-holder .content .image-view {
+  top: 0%;
+}
+.single-gallery:hover .img-holder .content .link-view {
+  bottom: 0%;
+}
+.single-gallery .img-holder {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.single-gallery .img-holder img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.single-gallery .img-holder .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.single-gallery .img-holder .content .title-holder {
+  display: table;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  top: 37%;
+  background: rgba(232, 162, 12, 0.75);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.single-gallery .img-holder .content .title-holder h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+.single-gallery .img-holder .content .image-view {
+  display: table;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  top: -25%;
+  background: rgba(232, 162, 12, 0.55);
+}
+.single-gallery .img-holder .content .image-view a {
+  color: #fff;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.single-gallery .img-holder .content .link-view {
+  display: table;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  bottom: -25%;
+  background: rgba(232, 162, 12, 0.55);
+}
+.single-gallery .img-holder .content .link-view a {
+  color: #fff;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.single-gallery .modal-content {
+  display: none;
 }
